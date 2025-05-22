@@ -1,0 +1,57 @@
+@import url('./fonts.css');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color-green: #495E57;
+  --primary-color-yellow: #f4ce14;
+  --secondary-color-pink: #ee9972;
+  --secondary-color-peach: #fbdabb;
+  --secondary-color-grey: #edefee;
+  --secondary-color-dark: #333333;
+  --text-color: #000000;
+  --max-width: 1440px;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  width: var(--max-width);
+  padding-left: 290px;
+  padding-right: 290px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}

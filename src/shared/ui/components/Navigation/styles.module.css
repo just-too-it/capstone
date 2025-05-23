@@ -1,0 +1,21 @@
+.list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.link {
+  color: var(--secondary-color-dark);
+  font-weight: 800;
+  padding: 5px 10px;
+}
+
+.link:hover {
+  color: var(--primary-color-green);
+}
+
+.link_active {
+  background-color: var(--primary-color-yellow);
+  border-radius: 4px;
+  padding: 5px 10px;
+}

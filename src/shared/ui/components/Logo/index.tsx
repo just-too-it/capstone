@@ -1,9 +1,7 @@
-import React from 'react'
+import logo from '../../../../assets/images/Logo.svg';
 
 const Logo = () => {
-  return (
-    <div>Logo</div>
-  )
-}
+  return <img src={logo} alt='Logo Little Lemon' height={60} />;
+};
 
-export default Logo
+export default Logo;

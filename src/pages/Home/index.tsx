@@ -5,10 +5,12 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <Hero />
-      <Specials />
-      <Testimonials />
-      <About />
+      <main>
+        <Hero />
+        <Specials />
+        <Testimonials />
+        <About />
+      </main>
       <Footer />
     </>
   );

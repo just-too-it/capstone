@@ -1,6 +1,9 @@
-import React from 'react';
+import { Header } from '../../shared/ui/sections';
 
 export const ReserveTable = () => {
-  return <>ReserveTable</>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
-

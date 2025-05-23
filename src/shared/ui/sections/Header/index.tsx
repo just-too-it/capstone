@@ -1,3 +1,14 @@
+import { Navigation } from '../../components';
+import Logo from '../../components/Logo';
+import { HEADER_NAV } from '../../constants/header-nav';
+
+import styles from './styles.module.css';
+
 export const Header = () => {
-  return <header>Header</header>;
+  return (
+    <header className={styles.header}>
+      <Logo />
+      <Navigation data={HEADER_NAV} />
+    </header>
+  );
 };

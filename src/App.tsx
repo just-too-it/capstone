@@ -1,11 +1,14 @@
-import React from 'react';
-import './styles/App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Home, ReserveTable } from './pages';
 
 function App() {
   return (
-    <div className="App">
-      Little Lemon
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/reserve' element={<ReserveTable />} />
+      </Routes>
+    </Router>
   );
 }
 

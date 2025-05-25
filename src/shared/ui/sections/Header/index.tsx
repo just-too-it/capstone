@@ -2,7 +2,7 @@ import { Navigation } from '../../components';
 import Logo from '../../components/Logo';
 import { HEADER_NAV } from '../../constants/header-nav';
 
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 export const Header = () => {
   return (

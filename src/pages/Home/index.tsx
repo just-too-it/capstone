@@ -3,7 +3,7 @@ import { About, Hero, Specials, Testimonials } from './sections';
 
 export const Home = () => {
   return (
-    <>
+    <div className='app-container'>
       <Header />
       <main>
         <Hero />
@@ -12,6 +12,6 @@ export const Home = () => {
         <About />
       </main>
       <Footer />
-    </>
+    </div>
   );
 };

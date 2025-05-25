@@ -1,3 +1,5 @@
+@import '../../../../styles/variables';
+
 .button {
   width: 380px;
   display: flex;
@@ -7,8 +9,8 @@
   padding-bottom: 13px;
   border-radius: 16px;
   border: none;
-  background-color: var(--primary-color-yellow);
-  color: var(--text-color);
+  background-color: $primary-color-yellow;
+  color: $text-color;
   font-size: 20px;
   font-weight: 800;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -21,8 +23,8 @@
 }
 
 .button:hover {
-  background-color: var(--primary-color-green);
-  color: var(--secondary-text-color);
+  background-color: $primary-color-green;
+  color: $secondary-text-color;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -33,12 +35,12 @@
 }
 
 .button:focus-visible {
-  outline: 2px solid var(--secondary-color-dark);
+  outline: 2px solid $secondary-color-dark;
   outline-offset: 2px;
 }
 
 .button:disabled {
-  background-color: var(--secondary-color-pink);
-  color: var(--secondary-text-color);
+  background-color: $secondary-color-pink;
+  color: $secondary-text-color;
   cursor: not-allowed;
 }

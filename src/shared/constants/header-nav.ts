@@ -1,4 +1,4 @@
-import { NavigationItem } from '../components/Navigation/types';
+import { NavigationItem } from '../ui/components/Navigation/NavItem/types';
 
 export const HEADER_NAV: Array<NavigationItem> = [
   {

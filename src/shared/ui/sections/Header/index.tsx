@@ -1,6 +1,6 @@
 import { Navigation } from '../../components';
 import Logo from '../../components/Logo';
-import { HEADER_NAV } from '../../constants/header-nav';
+import { HEADER_NAV } from '../../../constants/header-nav';
 
 import styles from './styles.module.scss';
 

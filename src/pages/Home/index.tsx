@@ -1,5 +1,5 @@
 import { Footer, Header } from '../../shared/ui/sections';
-import { About, Hero, Specials, Testimonials } from './sections';
+import {About, Hero, Specials } from './sections';
 
 import styles from './styles.module.scss';
 
@@ -10,7 +10,6 @@ export const Home = () => {
       <main className={styles.main}>
         <Hero />
         <Specials />
-        <Testimonials />
         <About />
       </main>
       <Footer />

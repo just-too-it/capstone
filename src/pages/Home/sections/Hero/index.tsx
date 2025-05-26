@@ -16,7 +16,7 @@ export const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1>Little Lemon</h1>
+          <h1 className={styles.title}>Little Lemon</h1>
           <h2 className={styles.subtitle}>Chicago</h2>
           <p className={styles.text}>
             We are a family owned restaurant with traditional Mediterranean cuisine and modern

@@ -28,6 +28,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
 
     @media (min-width: $breakpoint-tablet) {
@@ -49,6 +50,10 @@
     @media (min-width: $breakpoint-desktop) {
         width: 45%;
     }
+}
+
+.title {
+    color: $primary-color-yellow;
 }
 
 .subtitle {
@@ -77,5 +82,6 @@
     @media (min-width: $breakpoint-desktop) {
         width: 350px;
         height: 350px;
+        top: 10%;
     }
 }

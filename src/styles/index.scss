@@ -62,11 +62,18 @@ h6 {
 }
 
 h1 {
-  color: $primary-color-yellow;
   font-size: 48px;
 
   @media (min-width: $breakpoint-tablet) {
     font-size: 64px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 40px;
   }
 }
 

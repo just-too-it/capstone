@@ -1,0 +1,20 @@
+@import '../../../../styles/variables';
+
+.footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+
+    @media (min-width: $breakpoint-tablet) {
+        flex-direction: row;
+    }
+}
+
+.link {
+    display: inline-block;
+    height: 60px;
+}

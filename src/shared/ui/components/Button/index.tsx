@@ -1,13 +1,15 @@
+import clsx from 'clsx';
 import styles from './styles.module.scss';
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
+  className?: string;
 }
 
-export const Button = ({ children, onClick }: ButtonProps) => {
+export const Button = ({ children, onClick, className, ...rest }: ButtonProps) => {
   return (
-    <button className={styles.button} onClick={onClick}>
+    <button className={clsx(styles.button, className)} onClick={onClick} {...rest}>
       {children}
     </button>
   );

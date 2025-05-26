@@ -3,6 +3,7 @@ export const PATHS = {
   about: '/about',
   menu: '/menu',
   booking: '/booking',
+  confirm: '/confirm',
   orderOnline: '/order-online',
   login: '/login',
 };

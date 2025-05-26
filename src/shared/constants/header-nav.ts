@@ -1,34 +1,35 @@
 import { NavigationItem } from '../ui/components/Navigation/NavItem/types';
+import { PATHS } from './paths';
 
 export const HEADER_NAV: Array<NavigationItem> = [
   {
     name: 'home',
     label: 'Home',
-    href: '/',
+    href: PATHS.home,
   },
   {
     name: 'about',
     label: 'About',
-    href: '/about',
+    href: PATHS.about,
   },
   {
     name: 'menu',
     label: 'Menu',
-    href: '/menu',
+    href: PATHS.menu,
   },
   {
-    name: 'reservations',
-    label: 'Reservations',
-    href: '/reserve',
+    name: 'booking',
+    label: 'Booking',
+    href: PATHS.booking,
   },
   {
     name: 'orderOnline',
     label: 'Order online',
-    href: '/order-online',
+    href: PATHS.orderOnline,
   },
   {
     name: 'login',
     label: 'Login',
-    href: '/login',
+    href: PATHS.login,
   },
 ];

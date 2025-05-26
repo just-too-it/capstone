@@ -61,6 +61,15 @@ h6 {
   overflow-wrap: break-word;
 }
 
+h1 {
+  color: $primary-color-yellow;
+  font-size: 48px;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 64px;
+  }
+}
+
 p {
   text-wrap: pretty;
 }

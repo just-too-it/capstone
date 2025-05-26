@@ -1,0 +1,81 @@
+@import '../../../../styles/variables';
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background: $primary-color-green;
+    width: 100vw;
+    margin-left: -50vw;
+    position: relative;
+    left: 50%;
+    padding: $mobile-padding;
+
+    @media (min-width: $breakpoint-tablet) {
+        width: 100vw;
+        margin-left: -50vw;
+        left: 50%;
+        padding: $tablet-padding;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        padding: $desktop-padding;
+    }
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (min-width: $breakpoint-tablet) {
+        max-width: $max-width-tablet;
+        padding: 0 $tablet-padding;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        max-width: $max-width-desktop;
+        padding: 0 $desktop-padding;
+    }
+}
+
+.content {
+    @media (min-width: $breakpoint-tablet) {
+        width: 60%;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        width: 45%;
+    }
+}
+
+.subtitle {
+    margin-bottom: 2rem;
+    color: $secondary-text-color;
+}
+
+.text {
+    margin-bottom: 1.5rem;
+    color: $secondary-text-color;
+}
+
+.img {
+    display: none;
+
+    @media (min-width: $breakpoint-tablet) {
+        display: block;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 16px;
+        position: absolute;
+        right: 0;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        width: 350px;
+        height: 350px;
+    }
+}

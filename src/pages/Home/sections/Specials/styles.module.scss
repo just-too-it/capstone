@@ -2,11 +2,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
 }
 
 .title {
     font-size: 32px;
     margin-bottom: 1rem;
 }
-

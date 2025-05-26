@@ -71,12 +71,12 @@
 
     @media (min-width: $breakpoint-tablet) {
         display: block;
-        width: 300px;
+        width: 200px;
         height: 300px;
         object-fit: cover;
         border-radius: 16px;
         position: absolute;
-        right: 0;
+        right: 32px;
     }
 
     @media (min-width: $breakpoint-desktop) {

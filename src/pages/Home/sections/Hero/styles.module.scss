@@ -1,24 +1,24 @@
-@import '../../../../styles/variables';
+@use '../../../../styles/variables';
 
 .hero {
     display: flex;
     flex-direction: column;
-    background: $primary-color-green;
+    background: variables.$primary-color-green;
     width: 100vw;
     margin-left: -50vw;
     position: relative;
     left: 50%;
-    padding: $mobile-padding;
+    padding: variables.$mobile-padding;
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: variables.$breakpoint-tablet) {
         width: 100vw;
         margin-left: -50vw;
         left: 50%;
-        padding: $tablet-padding;
+        padding: variables.$tablet-padding;
     }
 
-    @media (min-width: $breakpoint-desktop) {
-        padding: $desktop-padding;
+    @media (min-width: variables.$breakpoint-desktop) {
+        padding: variables.$desktop-padding;
     }
 }
 
@@ -31,45 +31,45 @@
     align-items: center;
     gap: 20px;
 
-    @media (min-width: $breakpoint-tablet) {
-        max-width: $max-width-tablet;
-        padding: 0 $tablet-padding;
+    @media (min-width: variables.$breakpoint-tablet) {
+        max-width: variables.$max-width-tablet;
+        padding: 0 variables.$tablet-padding;
     }
 
-    @media (min-width: $breakpoint-desktop) {
-        max-width: $max-width-desktop;
-        padding: 0 $desktop-padding;
+    @media (min-width: variables.$breakpoint-desktop) {
+        max-width: variables.$max-width-desktop;
+        padding: 0 variables.$desktop-padding;
     }
 }
 
 .content {
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: variables.$breakpoint-tablet) {
         width: 60%;
     }
 
-    @media (min-width: $breakpoint-desktop) {
+    @media (min-width: variables.$breakpoint-desktop) {
         width: 45%;
     }
 }
 
 .title {
-    color: $primary-color-yellow;
+    color: variables.$primary-color-yellow;
 }
 
 .subtitle {
     margin-bottom: 2rem;
-    color: $secondary-text-color;
+    color: variables.$secondary-text-color;
 }
 
 .text {
     margin-bottom: 1.5rem;
-    color: $secondary-text-color;
+    color: variables.$secondary-text-color;
 }
 
 .img {
     display: none;
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: variables.$breakpoint-tablet) {
         display: block;
         width: 200px;
         height: 300px;
@@ -79,7 +79,7 @@
         right: 32px;
     }
 
-    @media (min-width: $breakpoint-desktop) {
+    @media (min-width: variables.$breakpoint-desktop) {
         width: 350px;
         height: 350px;
         top: 10%;

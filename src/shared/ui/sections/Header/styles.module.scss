@@ -1,4 +1,4 @@
-@import '../../../../styles/variables';
+@use '../../../../styles/variables';
 
 .header {
   width: 100%;
@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: $breakpoint-tablet) {
+  @media (min-width: variables.$breakpoint-tablet) {
     flex-wrap: wrap;
     gap: 15px;
     height: 165px;

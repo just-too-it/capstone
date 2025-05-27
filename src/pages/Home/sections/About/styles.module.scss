@@ -1,4 +1,4 @@
-@import '../../../../styles/variables';
+@use '../../../../styles/variables';
 
 .title {
     font-size: 32px;
@@ -11,7 +11,7 @@
     align-items: center;
     gap: 1rem;
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: variables.$breakpoint-tablet) {
         flex-direction: row;
         align-items: flex-start;
     }
@@ -24,7 +24,7 @@
     object-fit: cover;
     border-radius: 16px;
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: variables.$breakpoint-tablet) {
         width: 50%;
         flex: 0 0 50%;
         max-height: 400px;
@@ -32,7 +32,7 @@
 }
 
 .description {
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: variables.$breakpoint-tablet) {
         width: 50%;
         padding-left: 2rem;
     }

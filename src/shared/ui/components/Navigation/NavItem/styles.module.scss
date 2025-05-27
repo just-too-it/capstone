@@ -1,22 +1,22 @@
-@import "../../../../../styles/variables";
+@use "../../../../../styles/variables";
 
 .link {
-  color: $secondary-color-dark;
+  color: variables.$secondary-color-dark;
   font-weight: 800;
   padding: 5px 10px;
   font-size: 16px;
 
   &:hover {
-    color: $secondary-color-pink;
+    color: variables.$secondary-color-pink;
   }
 }
 
 .link_active {
-  background-color: $primary-color-yellow;
+  background-color: variables.$primary-color-yellow;
   border-radius: 4px;
   padding: 5px 10px;
 
   &:hover {
-    color: $secondary-color-dark;
+    color: variables.$secondary-color-dark;
   }
 }

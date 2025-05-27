@@ -1,5 +1,5 @@
-@import "./fonts";
-@import "./variables";
+@use "./fonts";
+@use "./variables";
 
 *,
 *::before,
@@ -29,14 +29,14 @@ body {
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $breakpoint-tablet) {
-    max-width: $max-width-tablet;
-    padding: 0 $tablet-padding;
+  @media (min-width: variables.$breakpoint-tablet) {
+    max-width: variables.$max-width-tablet;
+    padding: 0 variables.$tablet-padding;
   }
 
-  @media (min-width: $breakpoint-desktop) {
-    max-width: $max-width-desktop;
-    padding: 0 $desktop-padding;
+  @media (min-width: variables.$breakpoint-desktop) {
+    max-width: variables.$max-width-desktop;
+    padding: 0 variables.$desktop-padding;
   }
 }
 
@@ -64,7 +64,7 @@ h6 {
 h1 {
   font-size: 48px;
 
-  @media (min-width: $breakpoint-tablet) {
+  @media (min-width: variables.$breakpoint-tablet) {
     font-size: 64px;
   }
 }
@@ -72,7 +72,7 @@ h1 {
 h2 {
   font-size: 32px;
 
-  @media (min-width: $breakpoint-tablet) {
+  @media (min-width: variables.$breakpoint-tablet) {
     font-size: 40px;
   }
 }

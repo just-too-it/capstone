@@ -1,4 +1,4 @@
-@import '../../../../styles/variables';
+@use '../../../../styles/variables';
 
 .button {
   width: 100%;
@@ -9,8 +9,8 @@
   padding-bottom: 13px;
   border-radius: 16px;
   border: none;
-  background-color: $primary-color-yellow;
-  color: $text-color;
+  background-color: variables.$primary-color-yellow;
+  color: variables.$text-color;
   font-size: 20px;
   font-weight: 800;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -22,20 +22,20 @@
     box-shadow 0.3s ease;
 
   &:hover {
-    background-color: $primary-color-green;
-    color: $secondary-text-color;
+    background-color: variables.$primary-color-green;
+    color: variables.$secondary-text-color;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    outline: 1px solid $secondary-color-grey;
+    outline: 1px solid variables.$secondary-color-grey;
   }
 
   &:not(:disabled) {
     &:hover {
-      background-color: $primary-color-green;
-      color: $secondary-text-color;
+      background-color: variables.$primary-color-green;
+      color: variables.$secondary-text-color;
       transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-      outline: 1px solid $secondary-color-grey;
+      outline: 1px solid variables.$secondary-color-grey;
     }
 
     &:active {
@@ -44,21 +44,21 @@
     }
 
     &:focus-visible {
-      outline: 2px solid $secondary-color-dark;
+      outline: 2px solid variables.$secondary-color-dark;
       outline-offset: 2px;
     }
   }
 
   &:disabled {
-    background-color: $secondary-color-pink;
-    color: $secondary-text-color;
+    background-color: variables.$secondary-color-pink;
+    color: variables.$secondary-text-color;
     cursor: not-allowed;
     transition: none;
     transform: none;
   }
 
 
-  @media (min-width: $breakpoint-tablet) {
+  @media (min-width: variables.$breakpoint-tablet) {
     width: 380px;
   }
 }

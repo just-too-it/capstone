@@ -179,20 +179,22 @@ export const BookingForm = () => {
             margin='normal'
           />
 
-          <DatePicker
-            label='Reservation Date'
-            value={formik.values.date}
-            onChange={handleDateChange}
-            minDate={dayjs()}
-            slotProps={{
-              textField: {
-                fullWidth: true,
-                margin: 'normal',
-                error: formik.touched.date && Boolean(formik.errors.date),
-                helperText: formik.touched.date && formik.errors.date,
-              },
-            }}
-          />
+          <div data-testid='date-picker'>
+            <DatePicker
+              label='Reservation Date'
+              value={formik.values.date}
+              onChange={handleDateChange}
+              minDate={dayjs()}
+              slotProps={{
+                textField: {
+                  fullWidth: true,
+                  margin: 'normal',
+                  error: formik.touched.date && Boolean(formik.errors.date),
+                  helperText: formik.touched.date && formik.errors.date,
+                },
+              }}
+            />
+          </div>
 
           <FormControl
             fullWidth

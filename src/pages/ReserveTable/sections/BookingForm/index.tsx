@@ -112,8 +112,9 @@ export const BookingForm = () => {
   };
 
   const handleDateChange = (date: Dayjs | null) => {
-    formik.setFieldValue('date', date);
-    formik.setFieldValue('time', '');
+    formik.setFieldValue('date', date, true);
+    formik.setFieldTouched('date', true, false);
+    formik.setFieldValue('time', '', false);
 
     if (date) {
       fetchTimeSlots(date);
@@ -143,6 +144,7 @@ export const BookingForm = () => {
             label='Full Name'
             value={formik.values.name}
             onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             error={formik.touched.name && Boolean(formik.errors.name)}
             helperText={formik.touched.name && formik.errors.name}
             margin='normal'
@@ -156,6 +158,7 @@ export const BookingForm = () => {
             type='email'
             value={formik.values.email}
             onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             error={formik.touched.email && Boolean(formik.errors.email)}
             helperText={formik.touched.email && formik.errors.email}
             margin='normal'
@@ -170,6 +173,7 @@ export const BookingForm = () => {
             inputProps={{ min: 1, max: 10 }}
             value={formik.values.guests}
             onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
             error={formik.touched.guests && Boolean(formik.errors.guests)}
             helperText={formik.touched.guests && formik.errors.guests}
             margin='normal'
@@ -207,6 +211,7 @@ export const BookingForm = () => {
                   name='time'
                   value={formik.values.time}
                   onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
                   disabled={!formik.values.date || loadingTimeSlots}
                   label='Time'>
                   {loadingTimeSlots ? (
@@ -242,6 +247,7 @@ export const BookingForm = () => {
               name='occasion'
               value={formik.values.occasion}
               onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
               label='Occasion'>
               {occasions.map(option => (
                 <MenuItem key={option} value={option}>

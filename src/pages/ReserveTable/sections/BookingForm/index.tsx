@@ -126,7 +126,7 @@ export const BookingForm = () => {
     if (isBookingConfirmed) {
       navigate(PATHS.confirm);
     }
-  }, [isBookingConfirmed]);
+  }, [isBookingConfirmed, navigate]);
 
   return (
     <main>
@@ -241,7 +241,8 @@ export const BookingForm = () => {
               id='occasion'
               name='occasion'
               value={formik.values.occasion}
-              onChange={formik.handleChange}>
+              onChange={formik.handleChange}
+              label='Occasion'>
               {occasions.map(option => (
                 <MenuItem key={option} value={option}>
                   {option}
